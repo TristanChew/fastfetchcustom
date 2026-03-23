@@ -121,30 +121,28 @@ Paste this into the `"schemes"` array:
 
 ```jsonc
 {
-    "name": "GLaDOS Amber",
-    "background": "#0D0900",
-    "foreground": "#E79A2B",
-    "cursorColor": "#E79A2B",
-    "selectionBackground": "#9F6E13",
-
-    "black":        "#0D0900",
-    "red":          "#8B2500",
-    "green":        "#5C4A00",
-    "yellow":       "#9F6E13",
-    "blue":         "#4A3800",
-    "purple":       "#6B3D00",
-    "cyan":         "#7A5C00",
-    "white":        "#E79A2B",
-
-    "brightBlack":  "#3D2B00",
-    "brightRed":    "#C43A00",
-    "brightGreen":  "#8C7000",
-    "brightYellow": "#E79A2B",
-    "brightBlue":   "#7A6000",
-    "brightPurple": "#A06020",
-    "brightCyan":   "#B08030",
-    "brightWhite":  "#FFD080"
-}
+        "name": "Black Mesa Terminal",
+        "background": "#472B08",
+        "black": "#2A1904",
+        "blue": "#B87A1A",
+        "brightBlack": "#593808",
+        "brightBlue": "#D69322",
+        "brightCyan": "#EAA336",
+        "brightGreen": "#C8841E",
+        "brightPurple": "#AB7117",
+        "brightRed": "#BF7A16",
+        "brightWhite": "#F5B54A",
+        "brightYellow": "#E89A2A",
+        "cursorColor": "#9F6E13",
+        "cyan": "#D48D26",
+        "foreground": "#9F6E13",
+        "green": "#B47718",
+        "purple": "#A56D15",
+        "red": "#A86F14",
+        "selectionBackground": "#9F6E13",
+        "white": "#E29E32",
+        "yellow": "#D1851F"
+},
 ```
 
 #### Step 2 — Update your profile entry
@@ -153,25 +151,20 @@ Find your PowerShell (and/or CMD) entry inside `"profiles"` → `"list"` and add
 
 ```jsonc
 {
-    "colorScheme": "GLaDOS Amber",
-    "opacity": 90,
-    "useAcrylic": true,
-    "font": {
-        "face": "Cascadia Mono",
-        "size": 10
-    },
-    "initialCols": 120,
-    "initialRows": 30,
-    "experimental.retroTerminalEffect": true
-}
+    "colorScheme": "Black Mesa Terminal",
+    "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "experimental.retroTerminalEffect": true,
+    "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "hidden": false,
+    "name": "Windows PowerShell",
+    "opacity": 90
+},
 ```
 
 | Setting | Effect |
 |---|---|
-| `"colorScheme": "GLaDOS Amber"` | Applies the amber-on-black Aperture colour palette |
+| `"colorScheme": "Black Mesa Terminal"` | Applies the amber-on-black Aperture colour palette |
 | `"opacity": 90` | 90% opacity — subtle transparency behind the terminal |
-| `"useAcrylic": true` | Enables the frosted acrylic blur behind the window |
-| `"initialCols": 120` / `"initialRows": 30` | Sets the required 120×30 boot size |
 | `"experimental.retroTerminalEffect": true` | CRT scanline and phosphor glow overlay |
 
 > **Note:** `experimental.retroTerminalEffect` is a Windows Terminal feature. It may not be available in all versions — if your terminal shows an error on this line, remove it and the display will still work correctly without the CRT effect.
