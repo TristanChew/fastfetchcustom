@@ -1,0 +1,133 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "file",
+    "source": "C:/Users/trist/OneDrive/Documents/.config/fastfetch/ascii.txt",
+    "color": {
+      "1": "#9F6E13",
+      "2": "#9F6E13",
+      "3": "#9F6E13",
+    },
+    "padding": {
+      "top": 0,
+      "right": 4
+    }
+  },
+  "display": {
+    "separator": " ~> ",
+    "key": {
+      "width": 23
+    },
+    "bar": {
+      "char": {
+        "elapsed": "/",
+        "total": "-"
+      },
+      "width": 16
+    },
+    "percent": {
+      "type": 3,
+      "ndigits": 2
+    }
+  },
+  "modules": [
+
+    {
+      "type": "title",
+      "format": "Test Subject #742: Tristan Chew Zun Yan",
+      "style": "bold",
+      "color": "#9F6E13"
+    },
+
+    "break",
+    {
+      "type": "os",
+      "key": "GLaDOS",
+      "color": "#9F6E13"
+    },
+    {
+      "type": "kernel",
+      "key": "Core Protocol",
+      "color": "#9F6E13"
+    },
+    {
+      "type": "host",
+      "key": "Facility",
+      "color": "#9F6E13"
+    },
+    {
+      "type": "uptime",
+      "key": "Operational Since",
+      "color": "#9F6E13"
+    },
+    "break",
+    {
+      "type": "cpu",
+      "key": "Processing Unit",
+      "showPeCoreCount": true,
+      "temp": true,
+      "color": "#9F6E13"
+    },
+    {
+      "type": "memory",
+      "key": "Memory Allocation",
+      "color": "#9F6E13"
+    },
+    {
+      "type": "disk",
+      "key": "Storage Capacity",
+      "color": "#9F6E13"
+    },
+    {
+      "type": "battery",
+      "key": "Power Core",
+      "color": "#9F6E13"
+    },
+    "break",
+    {
+      "type": "localip",
+      "key": "Network Interface",
+      "showIpv6": true,
+      "compact": true,
+      "color": "#9F6E13"
+    },
+    {
+      "type": "shell",
+      "key": "Terminal Interface",
+      "color": "#9F6E13"
+    },
+    "break",
+ {
+      "type": "title",
+      "format": "DISCLAIMER: All data and information is strictly confidential and shall not ",
+      "color": "#9F6E13"
+    },
+ {
+      "type": "title",
+      "format": "            be disclosed or distributed to any unrelated personnel.",
+      "color": "#9F6E13"
+    },
+"break",
+    {
+      "type": "title",
+      "format": "GLaDOS v1.09 (C) 1982 Aperture Science, Inc. All rights reserved.",
+      "color": "#9F6E13"
+    },
+    {
+      "type": "text",
+      "text": "The cake is a lie.",
+      "style": "italic",
+      "color": "#9F6E13"
+    },
+    {
+      "type": "text",
+      "text": "================================================================================",
+      "color": "#9F6E13"
+    },
+    "break",
+    {
+      "type": "colors",
+      "symbol": "circle"
+    }
+  ]
+}
