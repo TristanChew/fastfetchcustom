@@ -4,6 +4,17 @@
 ::  Mirrors profile.ps1 boot sequence for Command Prompt sessions
 :: ============================================================================
 
+:: ----------------------------------------------------------------------------
+:: Guard: only run for interactive CMD sessions (real windows you opened).
+:: AutoRun fires on EVERY cmd.exe process, including hidden ones that apps
+:: silently spawn in the background. We check %CMDCMDLINE% — when an app
+:: launches cmd.exe to run a command it always passes /C followed by the
+:: command string. A real interactive window you opened does NOT have /C.
+:: If /C is detected, exit immediately so the app is not disrupted.
+:: ----------------------------------------------------------------------------
+echo %CMDCMDLINE% | findstr /i /c:"/c " >nul 2>&1
+if %errorlevel% equ 0 exit /b
+
 :: Set UTF-8 code page so special characters render correctly
 chcp 65001 >nul 2>&1
 
